@@ -1,0 +1,14 @@
+<label>user#index</label>
+
+<table>    
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+    </tr>       
+    <% for u in @users %>
+        <tr>
+            <td><%= u.name %></td>
+            <td><%= u.email %></td>
+        </tr>
+    <% end %>    
+</table>
